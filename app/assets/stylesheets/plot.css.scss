@@ -1,0 +1,55 @@
+.plot-layout{
+	background-color: white;
+	.plot-title{
+		color:black;
+		font-size: 44px;
+		margin-bottom: 50px;
+	}
+	.icon{
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+	.next_button{
+		margin:50px 0px;
+		border: 1px solid black;
+		padding: 10px 20px;
+		color:black;
+		width: 160px;
+		font-size: 14px;
+		text-align: center;
+	}
+	.q{
+		margin-left: 50px;
+		color:#2d2d2b;
+		font-size: 15px;
+	}
+	input[type=checkbox] {  
+    	display: none;  
+	} 
+	.checkbox label{
+		font-size: 0px;
+	}
+	.checkbox label:before {  
+    	border-radius: 3px;  
+	}  
+	input[type=checkbox]:checked + label:before {  
+	    content: "\2713";  
+	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+	    font-size: 22px;  
+	    color: red;  
+	    text-align: center;  
+	    line-height: 22px;  
+	}  
+	label:before {
+		content: "";
+		display: inline-block;
+		width: 21px;
+		height: 21px;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 1px;
+		background-color: #f1f1f1;
+		box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+	}
+}

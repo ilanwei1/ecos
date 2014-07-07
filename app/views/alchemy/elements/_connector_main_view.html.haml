@@ -1,0 +1,36 @@
+- cache(element) do
+  = element_view_for(element) do |el|
+    .pull-right.popup-container.col-lg-5
+      .popup.pophover1_text.hide1
+        = el.render :pop_hover1_text
+      .popup.pophover2_text.hide1
+        = el.render :pop_hover2_text
+      .popup.pophover3_text.hide1
+        = el.render :pop_hover3_text
+    .pull-left.col-lg-7
+      %h1.white.text-uppercase
+        = el.render :headline
+      .text.white
+        = el.render :text
+        %span.pophover#pophover1
+          = el.render :pop_hover1
+        %br
+        %span.pophover#pophover2
+          = el.render :pop_hover2
+        %br
+        %span.pophover#pophover3
+          = el.render :pop_hover3
+        %br
+      .text.white
+        = el.render :buttons_text
+      .btn-container
+        -unless el.element.contents.where(name:'right_button').first.essence.body.blank?
+          .btn_w
+            = el.render :right_button
+        -unless el.element.contents.where(name:'center_button').first.essence.body.blank?
+          .btn_w
+            = el.render :center_button
+        -unless el.element.contents.where(name:'left_button').first.essence.body.blank?
+          .btn_w
+            = el.render :left_button
+

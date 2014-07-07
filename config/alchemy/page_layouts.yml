@@ -1,0 +1,26 @@
+# == This file defines the page layouts for new pages.
+#
+# For further informations please see http://guides.alchemy-cms.com/create_page_layouts.html
+
+- name: index
+  unique: true
+  elements: [article]
+  autogenerate: [article]
+
+- name: plot_your_style
+  unique: false
+  cache: false
+  elements: [plot_your_style,q_with_pop_hover]
+  autogenerate: [plot_your_style,q_with_pop_hover]
+
+- name: connector
+  unique: false
+  cache: false
+  elements: [connector_main]
+  autogenerate: [connector_main]
+
+- name: connector_result
+  unique: false
+  cache: false
+  elements: [connector_result]
+  autogenerate: [connector_result]

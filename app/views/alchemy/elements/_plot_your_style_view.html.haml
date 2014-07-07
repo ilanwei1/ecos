@@ -1,0 +1,10 @@
+- cache(element) do
+	= element_view_for(element) do |el|
+		.col-lg-12
+			.icon.di.pull-left
+				= el.render :icon
+			.plot-title.di.pull-left
+				= el.render :headline
+			.clearfix
+			.sub_headline
+				= el.render :sub_headline

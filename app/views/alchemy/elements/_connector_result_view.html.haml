@@ -1,0 +1,10 @@
+- cache(element) do
+  = element_view_for(element) do |el|
+    .popup-result-container.col-lg-12
+      %h1.white
+        = el.render :headline
+      .btn-container
+        .btn_w
+          = el.render :left_button
+        .btn_w
+          = el.render :right_button

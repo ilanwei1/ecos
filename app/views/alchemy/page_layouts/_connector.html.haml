@@ -1,0 +1,11 @@
+- pic =  @page.elements.where(name:'connector_main').first.contents.where(name:'bg_picture').first
+- unless pic.essence.picture.blank?
+  - bg  = show_alchemy_picture_url pic.essence.picture
+.container.connector-layout{style: "background:url(#{bg}) top center no-repeat"}
+  .row
+    .col-lg-12{role: "content"}
+      .row
+        = render_elements
+
+
+      

@@ -1,0 +1,110 @@
+# == In this configuration you setup Alchemy´s element layouts.
+#
+# For further informations please see http://guides.alchemy-cms.com/create_elements.html
+
+- name: article
+  hint: true
+  unique: false
+  contents:
+  - name: headline
+    type: EssenceText
+    default: :article_headline
+    hint: true
+  - name: picture
+    type: EssencePicture
+    hint: true
+  - name: text
+    type: EssenceRichtext
+    default: :article_text
+    hint: true
+
+- name: q_with_pop_hover
+  contents:
+  unique: false
+  contents:
+  - name: q
+    type: EssenceText
+  - name: q_tag
+    type: EssenceText
+  - name: pop_hover
+    type: EssenceText
+  - name: pop_hover_text
+    type: EssenceRichtext
+
+- name: plot_your_style
+  contents:
+  unique: false
+  contents:
+  - name: icon
+    type: EssencePicture
+  - name: headline
+    type: EssenceText
+    default: PLOT YOUR STYLE
+    hint: true
+  - name: sub_headline
+    type: EssenceRichtext
+    default: 
+
+- name: connector_result
+  contents:
+  unique: false
+  contents:
+  - name: bg_picture
+    type: EssencePicture
+  - name: headline
+    type: EssenceText
+    default: :connector_result_header
+    hint: true
+  - name: left_button
+    type: EssenceText
+    settings:
+      linkable: true
+  - name: right_button
+    type: EssenceText
+    settings:
+      linkable: true
+
+- name: connector_main
+  contents:
+  unique: false
+  contents:
+  - name: headline
+    type: EssenceText
+    hint: true
+  - name: bg_picture
+    type: EssencePicture
+    hint: true
+  - name: text
+    type: EssenceRichtext
+    hint: true
+  - name: left_button
+    type: EssenceText
+    settings:
+      linkable: true
+  - name: center_button
+    type: EssenceText
+    settings:
+      linkable: true
+  - name: right_button
+    type: EssenceText
+    settings:
+      linkable: true
+  - name: pop_hover1
+    type: EssenceText
+  - name: pop_hover1_text
+    type: EssenceRichtext
+    hint: true
+  - name: pop_hover2
+    type: EssenceText
+  - name: pop_hover2_text
+    type: EssenceRichtext
+    hint: true
+  - name: pop_hover3
+    type: EssenceText
+  - name: pop_hover3_text
+    type: EssenceRichtext
+    hint: true
+  - name: buttons_text
+    type: EssenceText
+    default: :btn_text
+    hint: true
