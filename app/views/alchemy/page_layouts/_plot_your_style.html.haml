@@ -3,8 +3,10 @@
 		.col-lg-12{role: "content"}
 			.row
 				= render_elements only: ['plot_your_style']
-			.ul
+			.ul.re{style:'position:relative; width: 100%;height: 100%;'}
 				= render_elements only: ['q_with_pop_hover']
 			.next_button
 				NEXT
+				%span.arrow
+					>
 	      

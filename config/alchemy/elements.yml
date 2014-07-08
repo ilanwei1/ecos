@@ -18,6 +18,26 @@
     default: :article_text
     hint: true
 
+
+
+- name: style_result
+  contents:
+  unique: true
+  contents:
+  - name: icon
+    type: EssencePicture
+  - name: headline
+    type: EssenceText
+    default: YOUR STYLE
+    hint: true
+  - name: text
+    type: EssenceRichtext
+    default:
+  - name: behaviour_picture
+    type: EssencePicture
+    
+
+
 - name: q_with_pop_hover
   contents:
   unique: false
@@ -33,7 +53,7 @@
 
 - name: plot_your_style
   contents:
-  unique: false
+  unique: true
   contents:
   - name: icon
     type: EssencePicture

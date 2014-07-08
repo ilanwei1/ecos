@@ -13,6 +13,12 @@
   elements: [plot_your_style,q_with_pop_hover]
   autogenerate: [plot_your_style,q_with_pop_hover]
 
+- name: style_result
+  unique: false
+  cache: false
+  elements: [style_result]
+  autogenerate: [style_result]
+
 - name: connector
   unique: false
   cache: false

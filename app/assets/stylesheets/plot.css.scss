@@ -1,4 +1,7 @@
 .plot-layout{
+	.behaviour_picture{
+		margin: 60px 0
+	}
 	background-color: white;
 	.plot-title{
 		color:black;
@@ -17,11 +20,56 @@
 		width: 160px;
 		font-size: 14px;
 		text-align: center;
+		font-weight: bold;
+		.arrow{
+			color:red;
+			font-size: 16px;
+			margin-left: 15px;
+			font-weight: bold
+		}
 	}
 	.q{
+
 		margin-left: 50px;
 		color:#2d2d2b;
 		font-size: 15px;
+
+		.pop_hover{
+			cursor: pointer;
+			color:#666666;
+			font-size: 13px;
+			text-decoration: underline;
+			&:hover{
+				color:red;
+			}
+		}
+
+		.pop_hover_text{
+			position:absolute;
+			background:#626260;
+			color:white;
+			width:370px;
+			padding:20px;
+			right: 0px;
+			top: 0px;
+			ul {
+			    list-style: none;
+			    padding:0;
+			    margin:0;
+			}
+
+			li { 
+			    padding-left: 1em; 
+			    text-indent: -.7em;
+			    font-size: 12px;
+			}
+
+			li:before {
+			    content: "\2713";
+			    color: red; /* or whatever color you prefer */
+			    margin-right: 10px;
+			}
+		}
 	}
 	input[type=checkbox] {  
     	display: none;  
@@ -48,6 +96,7 @@
 		margin-right: 10px;
 		position: absolute;
 		left: 0;
+		top: 40px;
 		bottom: 1px;
 		background-color: #f1f1f1;
 		box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);

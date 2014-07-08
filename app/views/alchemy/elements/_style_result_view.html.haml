@@ -1,0 +1,12 @@
+- cache(element) do
+	= element_view_for(element) do |el|
+		.col-lg-6
+			.icon.di.pull-left
+				= el.render :icon
+			.plot-title.di.pull-left
+				= el.render :headline
+			.clearfix
+			.sub_headline
+				= el.render :text
+		.col-lg-6.behaviour_picture
+			= el.render :behaviour_picture

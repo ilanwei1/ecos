@@ -1,7 +1,7 @@
 - cache(element) do
 	= element_view_for(element) do |el|
-		.li.checkbox
-			.tags
+		.li
+			.tags.checkbox
 				= check_box_tag  el.render :q_tag
 				= label_tag el.render :q_tag
 			.q
@@ -10,5 +10,6 @@
 					= el.render :pop_hover
 				.pop_hover_text.hide1
 					= el.render :pop_hover_text
+				
 
 	    
